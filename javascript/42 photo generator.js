@@ -11,7 +11,8 @@ let currentPage = 1;  //page number
 let SearchTerm = null;
 
 let url = `https://api.pexels.com/v1/curated?page=${currentPage}per_page=${perPage}`;
-const apikey = import.meta.env.VITE_APP_API_KEY;
+const apikey = "FTBOISczTCjYyAhdudpAF4s1bleQQu0JBOo9Wo3URKyIr2RH5DHoORZP";
+
 
 window.addEventListener('load', () => fetchPhotoes(url));
 
