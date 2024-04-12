@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+/* font-family: "Poppins", sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.search{
+    height: 40vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.search .content{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+.search h1{
+    font-size: 2.65rem;
+    font-weight: 600;
+}
+
+.search p{
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+
+.search .search-box{
+    height: 55px;
+    margin: 45px 0px;
+    position: relative;
+}
+
+.search-box i{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #8d8d8d;
+}
+
+input,button,i{
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.search-box input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    padding-left: 55px;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery .images {
+    margin-top: 40px;
+    max-width: 95%;
+    columns: 5 340px;
+    gap: 15px;
+    /* In CSS, the columns property is used to specify the number and width of columns in a
+     multi-column layout. It's commonly used with the column-width and column-count properties*/
+} 
+
+.images img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.images .cards{
+    position: relative;
+    list-style: none;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+}
+
+.images .cards .details{
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    padding: 15px 20px;
+    background: linear-gradient(to top,rgba(0,0,0,0.9),transparent);
+    transition: bottom 0.5s ease;
+}
+
+.images .cards:hover .details{
+    bottom: 0;
+}
+
+.photographer{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photographer i:hover{
+    cursor: pointer;
+}
+
+.photographer span i{
+    margin-right: 10px;
+}
+
+.photographer span{
+    font-size: 1.05rem;
+}
+
+.photographer i{
+    font-size: 1.4rem;
+}
+
+.gallery .load-more{
+    margin: 50px 0px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 12px 27px;
+    background: rgb(149,127,239);
+    background: linear-gradient(45deg, rgba(149,127,239,1) 0%, rgba(233,21,218,1) 31%, rgba(98,54,142,1) 74%, rgba(239,97,97,1) 100%);
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+
+.gallery .load-more .disabled{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.lightbox{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.lightbox .wrapper{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 850px;
+    border-radius: 5px;
+    background: #fff;
+    transform: translate(-50%,-50%);
+}
+
+.preview-img .img{
+    max-height: 65vh;
+    max-width: 90vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.preview-img{
+    display: flex;
+    justify-content: center;
+}
+
+
+.preview-img .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wrap-photographer{
+    color: black;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.wrap-photographer span i{
+    margin-right: 5px;
+}
+
+.wrap-but i{
+    color: white;
+    font-size: 1.4rem;
+    background-color: purple;
+    padding: 5px;
+} 
+
+.wrap-but {
+    display: flex;
+    gap: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}

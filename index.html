@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo generator</title>
+
+    <link rel="stylesheet" href="./css/42 photo generator.css">
+    <script src="https://kit.fontawesome.com/743d73e695.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="lightbox">
+        <div class="wrapper">
+            <header>
+                <div class="wrap-photographer">
+                    <span><i class="fa-solid fa-camera-retro" id="cam"></i><span class="photographer_name"></span></span>
+                    <button class="wrap-but">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                </div>
+            </header>
+            <div class="preview-img">
+                <div class="img"><img src="" alt="preview_img"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="search">
+        <img src="./Images/photo generator-11.jpg" alt="searchimg">
+        <div class="content">
+            <h1><i class="fa-regular fa-images"></i> Pexelet With Kunal</h1>
+            <p>Search and download any images within a seconds...</p>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="input-text" type="text" placeholder="Search Images">
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <ul class="images">
+
+        </ul>
+        <button class="load-more">Load More</button>
+    </section>
+    
+    <script src="./42 photo generator.js"></script>
+</body>
+
+</html>
