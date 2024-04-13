@@ -222,3 +222,60 @@ input,button,i{
     margin-top: 5px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 650px) {
+
+    .content{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-box{
+        width: 80%;
+    }
+
+    .search h1{
+        flex-shrink: 2;
+        font-size: 2rem;
+        font-weight: 550;
+    }
+
+    .search p{
+        flex-shrink: 3;
+        font-size: 1.4rem;
+        margin-top: 8px;
+    }
+
+    .search .search-box{
+        flex-shrink: 4;
+        height: 45px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .content{
+        margin-top: 90px;
+    }
+
+    .search h1{
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        font-weight: 550;
+    }
+
+    .search p{
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    .search .search-box{
+        height: 40px;
+        margin: 45px 0px;
+        margin-bottom: 100px;
+    }
+}
