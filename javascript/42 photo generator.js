@@ -32,7 +32,7 @@ async function fetchPhotoes(querry) {
 
     //Parse the json response-
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
 
     //binding each and every 15 photoes from the pexels website
     bindPhotoes(data.photos);
