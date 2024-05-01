@@ -4,7 +4,7 @@ const searchInput = document.querySelector(".input-text");
 const lightBox = document.querySelector(".lightbox");
 const closeButton = document.querySelector(".fa-circle-xmark");
 const downloadButton=document.querySelector(".fa-cloud-arrow-down");
-require("dotenv").config();
+const dotenv=require("dotenv").config();
 
 const perPage = 15;   //Number of results per page
 let currentPage = 1;  //page number
