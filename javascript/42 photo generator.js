@@ -4,14 +4,13 @@ const searchInput = document.querySelector(".input-text");
 const lightBox = document.querySelector(".lightbox");
 const closeButton = document.querySelector(".fa-circle-xmark");
 const downloadButton=document.querySelector(".fa-cloud-arrow-down");
-const dotenv=require("dotenv").config();
 
 const perPage = 15;   //Number of results per page
 let currentPage = 1;  //page number
 let SearchTerm = null;
 
 let url = `https://api.pexels.com/v1/curated?page=${currentPage}per_page=${perPage}`;
-const apikey = process.env.MY_API_TOKEN;
+const apikey = "FTBOISczTCjYyAhdudpAF4s1bleQQu0JBOo9Wo3URKyIr2RH5DHoORZP";
 
 
 window.addEventListener('load', () => fetchPhotoes(url));
